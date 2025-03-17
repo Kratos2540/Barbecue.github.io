@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBQ Heaven</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #000000 ;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        header .logo {
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            width: 65 px;
+            margin-right: 10px;
+        }
+        nav {
+            background-color: #FFCC00; /* Glovo's yellow */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background-color: #ff9900; /* Darker yellow for hover */
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: white;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            font-size: 18px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .menu-item img {
+            width: 150px;
+            height: 120px;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 1000px;
+            max-height: 500px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #FFCC00; /* Glovo's yellow */
+            color: black;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .order-button {
+            background-color: #FFCC00; /* Glovo yellow */
+            color: black;
+            font-size: 20px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .order-button:hover {
+            background-color: #ff9900; /* Darker yellow for hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+
+        </div>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Glovo Logo"> <!-- Glovo logo -->
+
+        </div>
+        <div class="logo">
+
+        </div>
+
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#footer">Make Your Order</a> <!-- Link to the footer -->
+        <a href="https://www.glovoapp.com" class="order-button" target="_blank">Order via Glovo</a>
+    </nav>
+
+    <section class="container" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item"><img src="images/ftour express.jpg" alt="Ftour Express"><span> Ftour Express</span> <span>55,00 MAD</span></div>
+        <div class="menu-item"><img src="images/ftour beldi.jpg" alt="Ftour Beldi"><span>️ Ftour Beldi</span> <span>60,00 MAD</span></div>
+        <div class="menu-item"><img src="images/ftour gourmand.jpg" alt="Ftour Gourmand"><span> Ftour Gourmand</span> <span>80,00 MAD</span></div>
+        <div class="menu-item"><img src="images/pastilla poulet.jpg" alt="Mini Pastilla Poulet"><span> Mini Pastilla Poulet</span> <span>22,00 MAD</span></div>
+        <div class="menu-item"><img src="images/pastilla fruits de mer.jpg" alt="Mini Pastilla Fruits de Mer"><span> Mini Pastilla Fruits de Mer</span> <span>27,00 MAD</span></div>
+        <div class="menu-item"><img src="images/nem poulet.jpg" alt="Nem Poulet"><span> Nem Poulet</span> <span>10,00 MAD</span></div>
+        <div class="menu-item"><img src="images/nem viande hachee.jpg" alt="Nem Viande Hachée"><span> Nem Viande Hachée</span> <span>10,00 MAD</span></div>
+        <div class="menu-item"><img src="images/briwa pomme de terre.jpg" alt="Briwa Pomme de Terre"><span> Briwa Pomme de Terre</span> <span>6,00 MAD</span></div>
+        <div class="menu-item"><img src="images/briwa legumes.jpg" alt="Briwa Légumes"><span> Briwa Légumes</span> <span>6,00 MAD</span></div>
+        <div class="menu-item"><img src="images/poulet grille.jpg" alt="1/4 Poulet Grillé"><span> 1/4 Poulet Grillé</span> <span>58,00 MAD</span></div>
+        <div class="menu-item"><img src="images/poulet grille.jpg" alt="1/2 Poulet Grillé"><span> 1/2 Poulet Grillé</span> <span>108,00 MAD</span></div>
+        <div class="menu-item"><img src="images/brochette poulet.jpg" alt="Brochettes de Dinde"><span> Brochettes de Dinde</span> <span>58,00 MAD</span></div>
+    </section>
+
+    <section class="container" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="images/gal1.jpg" alt="Gallery Image 1">
+        <img src="images/gal2.jpg" alt="Gallery Image 2">
+        <img src="images/gal3.jpg" alt="Gallery Image 3">
+    </div>
+    </section>
+
+    <footer id="footer">
+        <h2>Make Your Order</h2>
+        <p>📍 Salé Hay Chmaou Route kenitra, Salé, Morocco</p>
+        <p>📞 0671-691071</p>
+        <p>⏰ Open Daily: 11 AM - 10 PM</p>
+    </footer>
+</body>
+</html>
